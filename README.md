@@ -26,6 +26,21 @@ By keeping **Humans in the Loop (HITL)** for high-stakes recall decisions while 
 
 ---
 
+## ⚙️ UiPath Components & Agent Classification
+
+### **Agent Type**
+* **Classification**: **Hybrid (Both)**
+* **Details**: PharmaTrac AI leverages **Low-code Agents** (built inside UiPath Agent Builder utilizing Gemini 2.5 Flash cognitive reasoning) integrated seamlessly with **Coded RPA workflows** (developed in UiPath Studio for ERP database enrichment, schema validations, and notification routing).
+
+### **UiPath Components Utilized**
+1. **UiPath Maestro Case Management**: Coordinates the unified state machine, schema transitions, and data variables across all six stages.
+2. **UiPath Agent Builder**: Powers the cognitive parsing, cluster reasoning, and decision-evaluation agents.
+3. **UiPath Apps**: Hosts the dark-themed, glassmorphic HITL Escalation Dashboard (`EscalationApp_Final`) inside Action Center.
+4. **UiPath Integration Service & Gmail Connector**: Manages external API connectivity and handles automatic email notifications for distribution containment.
+5. **UiPath Studio**: Orchestrates the underlying background robots, ERP lookup scripts, data mapping, and entry/exit stage transitions.
+
+---
+
 ## 🏗️ Architecture & Flow Control
 
 The workflow is orchestrated via **UiPath Maestro Case** using a structured, state-driven case plan ([caseplan.json](PharmaComplaintCase/caseplan.json)) containing six distinct stages:
@@ -150,7 +165,7 @@ Production-ready software must survive real-world chaos. PharmaSignal AI incorpo
 ### 🛠️ Execution Setup
 1. **Clone project repository**:
    ```bash
-   git clone <your-repository-url>
+   git clone https://github.com/pugalesan-pugal/PharmaTrac-AI.git
    ```
 2. **Import Solution Package**:
    * Open UiPath Studio, click **Open**, and select [PharmaComplaintLast.uipx](PharmaComplaintLast.uipx).
