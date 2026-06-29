@@ -28,7 +28,7 @@ By keeping **Humans in the Loop (HITL)** for high-stakes recall decisions while 
 
 ## 🏗️ Architecture & Flow Control
 
-The workflow is orchestrated via **UiPath Maestro Case** using a structured, state-driven case plan ([caseplan.json](PharmaComplaintCase/caseplan.json)) containing five distinct stages:
+The workflow is orchestrated via **UiPath Maestro Case** using a structured, state-driven case plan ([caseplan.json](PharmaComplaintCase/caseplan.json)) containing six distinct stages:
 
 ```mermaid
 flowchart TD
@@ -49,18 +49,24 @@ flowchart TD
         G -->|Cross-Reference Historical Data| H[Synthesize Safety Report]
     end
 
-    subgraph Stage 4: Recall Decision
+    subgraph Stage 4: Human Action
         H --> I[Task: Escalation Review]
         I --> J[UiPath Interactive App: EscalationApp_Final]
-        K((Safety Officer Sign-off)) -->|Interactive Review| J
+        K((Safety Officer Sign-off)) -->|Interactive HITL Review| J
     end
 
-    subgraph Stage 5: Closed
-        J -->|Decision: Initiate Recall| L[Recall Action Agent]
-        J -->|Decision: Archive| M[Archive Case]
-        L --> N[Send Alerts via Gmail Integration]
-        M --> O[Generate Case Closure Summary]
-        N --> P[Case Resolved & Archived]
+    subgraph Stage 5: Recall Decision
+        J -->|Approved for Recall| L[Recall Decision Agent]
+        J -->|Escalate to Lab| L2[Further Investigation]
+        J -->|Dismiss| M_Skip[Archive without Recall]
+    end
+
+    subgraph Stage 6: Closed
+        L -->|Decision: Initiate Recall| N[Recall Action Agent]
+        L2 --> O[Generate Case Closure Summary]
+        M_Skip --> O
+        N --> Q[Send Alerts via Gmail Integration]
+        Q --> P[Case Resolved & Archived]
         O --> P
     end
 
@@ -75,34 +81,52 @@ flowchart TD
 Each agent in the pipeline is built to handle specific enterprise operations:
 
 ### 1. Ingestion: `PharmaSignal_CaseTrigger`
+* **Stage**: Received
 * **Trigger Type**: API / Webhook Event.
 * **Input Schema**: Validated against [PharmaSignal_Intake.json](../PharmaSignal_Intake/PharmaSignal_Intake.json) (requires `complaint_id`, `source_channel`, and `complaint_text`).
 * **Function**: Sanitizes narrative text, checks for duplicates, creates a case record in Maestro Case, and transitions the case to the `Received` state.
 
 ### 2. Entity Extraction: `ComplaintIntelligenceAgent`
+* **Stage**: Enriching
 * **Core Logic**: LLM Cognitive Model.
 * **Input**: Raw text narrative.
 * **Outputs**: Product Name, Batch ID, Symptom Category, Severity, and Extraction Confidence.
 * **Resiliency Safeguard**: If confidence is below 80% or if critical parameters (e.g., Batch ID) are missing, the agent flags `requires_human_review = true` to bypass normal execution and fast-track to manual review.
 
 ### 3. ERP Enrichment: `BatchLookupAgent`
+* **Stage**: Cluster Analysis
 * **Core Logic**: RPA Integration.
 * **Input**: Product Name, Batch ID.
 * **Function**: Queries internal manufacturing databases to identify the active manufacturing facility, distribution geography, and matches past complaints associated with that specific batch.
 
 ### 4. Anomaly Detection: `ClusterDetectionAgent`
+* **Stage**: Cluster Analysis
 * **Core Logic**: LLM reasoning combined with threshold check rules.
 * **Inputs**: Current complaint symptoms, batch ID, history of matching complaints.
 * **Evaluation Rules**: Calculates if complaints for a single batch exceed a safety coefficient (e.g., >3 events of identical symptom categories).
 * **Outputs**: `cluster_detected` (Boolean), `signal_strength` (Low/Medium/High), and detailed text reasoning explaining the safety risk.
 
 ### 5. HITL Panel: `EscalationApp_Final` (UiPath App)
+* **Stage**: Human Action
+* **Task Type**: Action (HITL — Human-in-the-Loop).
 * **Design File**: [EscalationApp_Final.json](resources/solution_folder/app/vB%20Action/EscalationApp_Final.json).
 * **UI Features**: Renders a dark-themed, glassmorphic executive screen displaying extraction data side-by-side with raw complaint records, the calculated cluster reasoning, signal strength, and a decision action panel (Initiate Recall, Escalate to Lab, Dismiss).
+* **Recipient**: Assigned Safety Officer reviews and signs off on the recommended action.
 
-### 6. Action & Notifications: `RecallActionAgent`
-* **Core Logic**: API Integration & Orchestration.
-* **Function**: In the event of a "Recall" decision, compiles the case history into a report, updates safety records, and calls the **UiPath Google Gmail Connector** to send urgent alerts to distributor lists.
+### 6. Recall Evaluation: `RecallDecisionAgent`
+* **Stage**: Recall Decision
+* **Core Logic**: Agentic LLM reasoning.
+* **Function**: Receives the safety officer's signed-off decision from the Human Action stage and evaluates the final recall recommendation. Synthesizes a structured recall report incorporating cluster analysis results, signal strength, and reviewer notes.
+
+### 7. Action & Notifications: `CaseClosureAgent`
+* **Stage**: Closed
+* **Core Logic**: Agentic LLM with API Integration.
+* **Function**: Compiles the full case history into a closure report, updates safety records, and generates the final case resolution summary.
+
+### 8. Email Alerts: Gmail Integration
+* **Stage**: Closed
+* **Core Logic**: UiPath Google Gmail Connector.
+* **Function**: In the event of a "Recall" decision, calls the **UiPath Google Gmail Connector** to send urgent alerts to distributor lists and regulatory contacts.
 
 ---
 
