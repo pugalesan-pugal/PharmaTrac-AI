@@ -1,0 +1,60 @@
+{
+  "docVersion": "1.0.0",
+  "resource": {
+    "name": "ClusterDetection.agent.ClusterDetectionAgent",
+    "kind": "process",
+    "type": "agent",
+    "apiVersion": "orchestrator.uipath.com/v1",
+    "isOverridable": true,
+    "dependencies": [
+      {
+        "name": "ClusterDetection.agent.ClusterDetectionAgent_1",
+        "kind": "Package"
+      }
+    ],
+    "runtimeDependencies": [],
+    "files": [],
+    "folders": [
+      {
+        "fullyQualifiedName": "solution_folder"
+      }
+    ],
+    "spec": {
+      "type": "Agent",
+      "agentMemory": null,
+      "targetRuntime": "pythonAgent",
+      "environmentVariables": "",
+      "referencedAssets": null,
+      "name": "ClusterDetection.agent.ClusterDetectionAgent",
+      "package": {
+        "name": "ClusterDetection.agent.ClusterDetectionAgent_1",
+        "key": "ClusterDetection.agent.ClusterDetectionAgent:1.0.1"
+      },
+      "packageName": "ClusterDetection.agent.ClusterDetectionAgent",
+      "packageVersion": "1.0.1",
+      "entryPointUniqueId": "862883b4-479a-405a-b01f-58f644b91da1",
+      "entryPointName": "content/agent.json",
+      "inputArguments": null,
+      "inputArgumentsSchema": null,
+      "outputArgumentsSchema": null,
+      "inputArgumentsSchemaV2": "{\n  \u0022type\u0022: \u0022object\u0022,\n  \u0022properties\u0022: {\n    \u0022complaints_json\u0022: {\n      \u0022type\u0022: \u0022string\u0022\n    },\n    \u0022product_name\u0022: {\n      \u0022type\u0022: \u0022string\u0022\n    },\n    \u0022analysis_date\u0022: {\n      \u0022type\u0022: \u0022string\u0022\n    }\n  }\n}",
+      "outputArgumentsSchemaV2": "{\n  \u0022type\u0022: \u0022object\u0022,\n  \u0022properties\u0022: {\n    \u0022cluster_result\u0022: {\n      \u0022type\u0022: \u0022string\u0022,\n      \u0022description\u0022: \u0022Output content\u0022\n    }\n  }\n}",
+      "hiddenForAttendedUser": false,
+      "alwaysRunning": false,
+      "autoStartProcess": false,
+      "targetFrameworkValue": "Portable",
+      "retentionAction": "Delete",
+      "retentionPeriod": 30,
+      "retentionBucketRef": null,
+      "staleRetentionAction": "Delete",
+      "staleRetentionPeriod": 180,
+      "staleRetentionBucketRef": null,
+      "entryPoints": "[{\u0022UniqueId\u0022:\u0022862883b4-479a-405a-b01f-58f644b91da1\u0022,\u0022Path\u0022:\u0022content/agent.json\u0022,\u0022DisplayName\u0022:null,\u0022InputArguments\u0022:\u0022{\\n  \\\u0022type\\\u0022: \\\u0022object\\\u0022,\\n  \\\u0022properties\\\u0022: {\\n    \\\u0022complaints_json\\\u0022: {\\n      \\\u0022type\\\u0022: \\\u0022string\\\u0022\\n    },\\n    \\\u0022product_name\\\u0022: {\\n      \\\u0022type\\\u0022: \\\u0022string\\\u0022\\n    },\\n    \\\u0022analysis_date\\\u0022: {\\n      \\\u0022type\\\u0022: \\\u0022string\\\u0022\\n    }\\n  }\\n}\u0022,\u0022OutputArguments\u0022:\u0022{\\n  \\\u0022type\\\u0022: \\\u0022object\\\u0022,\\n  \\\u0022properties\\\u0022: {\\n    \\\u0022cluster_result\\\u0022: {\\n      \\\u0022type\\\u0022: \\\u0022string\\\u0022,\\n      \\\u0022description\\\u0022: \\\u0022Output content\\\u0022\\n    }\\n  }\\n}\u0022,\u0022Type\u0022:4,\u0022TargetRuntime\u0022:null,\u0022ContentRoot\u0022:null,\u0022DataVariation\u0022:null,\u0022Id\u0022:13825933}]",
+      "connections": null,
+      "tags": [],
+      "description": "Created by UiPath"
+    },
+    "locks": [],
+    "key": "fa2aa105-7c1a-4d2f-afb8-44e86dafe956"
+  }
+}

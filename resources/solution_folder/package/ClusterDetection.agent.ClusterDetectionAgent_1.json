@@ -1,0 +1,33 @@
+{
+  "docVersion": "1.0.0",
+  "resource": {
+    "name": "ClusterDetection.agent.ClusterDetectionAgent_1",
+    "kind": "package",
+    "apiVersion": "orchestrator.uipath.com/v1",
+    "isOverridable": true,
+    "dependencies": [],
+    "runtimeDependencies": [],
+    "files": [
+      {
+        "name": "package_ClusterDetection.agent.ClusterDetectionAgent_1.1.0.1.nupkg",
+        "kind": "Package",
+        "version": "1.0.1",
+        "url": "https://staging.uipath.com/b709c43d-bfcc-47b2-94d3-f252c73d20bb/2be80ef3-ccd9-4d81-8ffc-f1e4b086a29f/orchestrator_/odata/Processes/UiPath.Server.Configuration.OData.DownloadPackage(key=\u0027ClusterDetection.agent.ClusterDetectionAgent:1.0.1\u0027)?feedId=c3963865-fce6-4322-926e-cab2b9ac41f5",
+        "key": "package_ClusterDetection.agent.ClusterDetectionAgent_1_1.0.1"
+      }
+    ],
+    "folders": [
+      {
+        "fullyQualifiedName": "solution_folder"
+      }
+    ],
+    "spec": {
+      "fileName": "ClusterDetection.agent.ClusterDetectionAgent.1.0.1.nupkg",
+      "fileReference": "package_ClusterDetection.agent.ClusterDetectionAgent_1_1.0.1",
+      "name": "ClusterDetection.agent.ClusterDetectionAgent_1",
+      "description": null
+    },
+    "locks": [],
+    "key": "ClusterDetection.agent.ClusterDetectionAgent:1.0.1"
+  }
+}

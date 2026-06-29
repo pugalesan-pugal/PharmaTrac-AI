@@ -1,0 +1,37 @@
+{
+  "docVersion": "1.0.0",
+  "resource": {
+    "name": "EscalationApp_Final",
+    "kind": "app",
+    "type": "vB Action",
+    "apiVersion": "apps.uipath.com/v1",
+    "isOverridable": true,
+    "dependencies": [
+      {
+        "name": "EscalationApp_Final",
+        "kind": "appVersion"
+      }
+    ],
+    "runtimeDependencies": [],
+    "files": [],
+    "folders": [
+      {
+        "fullyQualifiedName": "solution_folder"
+      }
+    ],
+    "spec": {
+      "name": "EscalationApp_Final",
+      "description": "6.0",
+      "type": "Regular",
+      "appSystemName": "IDd9192cc5ad694e20b4564aeddfd988ce",
+      "version": "6.0.0",
+      "appVersionRef": {
+        "name": "EscalationApp_Final",
+        "key": "ID66a228c84c3441e28364dac77e6288a6"
+      },
+      "actionSchema": "{\u0022key\u0022:\u00224aa0e6ec-d36c-44fe-97ab-0bbc9a67f6a0\u0022,\u0022version\u0022:6,\u0022__isDeleted\u0022:false,\u0022dateLastModified\u0022:\u00222026-06-29T05:04:24.368Z\u0022,\u0022description\u0022:\u0022Action Schema\u0022,\u0022id\u0022:\u0022ID5329ed74d7bd4b2b9d316f38c243b75e\u0022,\u0022inOuts\u0022:[],\u0022inputs\u0022:[{\u0022name\u0022:\u0022BatchId\u0022,\u0022description\u0022:\u0022Identifier for the batch associated with the adverse event cluster.\u0022,\u0022required\u0022:false,\u0022type\u0022:\u0022System.String\u0022,\u0022typeNamespace\u0022:\u0022system\u0022,\u0022isList\u0022:false,\u0022collectionDataType\u0022:null,\u0022customType\u0022:null,\u0022properties\u0022:[],\u0022key\u0022:\u0022c1836827-443e-4bfe-a6d5-fab029510af8\u0022},{\u0022name\u0022:\u0022SignalStrength\u0022,\u0022description\u0022:\u0022Indication of the strength or severity of the signal for the adverse event cluster.\u0022,\u0022required\u0022:false,\u0022type\u0022:\u0022System.String\u0022,\u0022typeNamespace\u0022:\u0022system\u0022,\u0022isList\u0022:false,\u0022collectionDataType\u0022:null,\u0022customType\u0022:null,\u0022properties\u0022:[],\u0022key\u0022:\u0022c38e1ba6-5049-448c-87fb-46ce6ef9152c\u0022},{\u0022name\u0022:\u0022ClusterComplaintCount\u0022,\u0022description\u0022:\u0022Total number of complaints within the adverse event cluster.\u0022,\u0022required\u0022:false,\u0022type\u0022:\u0022System.String\u0022,\u0022typeNamespace\u0022:\u0022system\u0022,\u0022isList\u0022:false,\u0022collectionDataType\u0022:null,\u0022customType\u0022:null,\u0022properties\u0022:[],\u0022key\u0022:\u0022e0377c50-4f88-480a-87f6-8bd1544927d9\u0022},{\u0022name\u0022:\u0022SymptomCategory\u0022,\u0022description\u0022:\u0022Category of symptoms observed in the adverse event cluster.\u0022,\u0022required\u0022:false,\u0022type\u0022:\u0022System.String\u0022,\u0022typeNamespace\u0022:\u0022system\u0022,\u0022isList\u0022:false,\u0022collectionDataType\u0022:null,\u0022customType\u0022:null,\u0022properties\u0022:[],\u0022key\u0022:\u0022d22bbb4f-5de3-4abc-91d8-946c6d4d59d9\u0022},{\u0022name\u0022:\u0022ManufacturingPlant\u0022,\u0022description\u0022:\u0022The manufacturing plant associated with the product involved in the adverse event cluster.\u0022,\u0022required\u0022:false,\u0022type\u0022:\u0022System.String\u0022,\u0022typeNamespace\u0022:\u0022system\u0022,\u0022isList\u0022:false,\u0022collectionDataType\u0022:null,\u0022customType\u0022:null,\u0022properties\u0022:[],\u0022key\u0022:\u0022d9d176de-ac92-4c56-bd23-280d928445df\u0022},{\u0022name\u0022:\u0022ClusterReasoning\u0022,\u0022description\u0022:\u0022Detailed reasoning or analysis for the identified adverse event cluster.\u0022,\u0022required\u0022:false,\u0022type\u0022:\u0022System.String\u0022,\u0022typeNamespace\u0022:\u0022system\u0022,\u0022isList\u0022:false,\u0022collectionDataType\u0022:null,\u0022customType\u0022:null,\u0022properties\u0022:[],\u0022key\u0022:\u0022f263ca89-b2d7-496e-a052-099474a7a734\u0022}],\u0022name\u0022:\u0022ActionSchema\u0022,\u0022outcomes\u0022:[{\u0022name\u0022:\u0022Escalate\u0022,\u0022description\u0022:\u0022The adverse event cluster requires further escalation.\u0022,\u0022required\u0022:false,\u0022type\u0022:\u0022System.String\u0022,\u0022typeNamespace\u0022:\u0022system\u0022,\u0022isList\u0022:false,\u0022collectionDataType\u0022:null,\u0022customType\u0022:null,\u0022properties\u0022:[],\u0022key\u0022:\u0022c4324bf2-0038-47d9-b7d3-2e5b7063c5d8\u0022},{\u0022name\u0022:\u0022Dismiss\u0022,\u0022description\u0022:\u0022The adverse event cluster does not require further action and can be dismissed.\u0022,\u0022required\u0022:false,\u0022type\u0022:\u0022System.String\u0022,\u0022typeNamespace\u0022:\u0022system\u0022,\u0022isList\u0022:false,\u0022collectionDataType\u0022:null,\u0022customType\u0022:null,\u0022properties\u0022:[],\u0022key\u0022:\u0022c7bf1d45-2f36-48b6-a57a-a16a871323e0\u0022}],\u0022outputs\u0022:[{\u0022name\u0022:\u0022ReviewDecision\u0022,\u0022description\u0022:\u0022The final decision made by the reviewer regarding the cluster.\u0022,\u0022required\u0022:true,\u0022type\u0022:\u0022System.String\u0022,\u0022typeNamespace\u0022:\u0022system\u0022,\u0022isList\u0022:false,\u0022collectionDataType\u0022:null,\u0022customType\u0022:null,\u0022properties\u0022:[],\u0022key\u0022:\u002275d8bc08-c1f7-47bb-9544-0c1d51e9fd98\u0022},{\u0022name\u0022:\u0022ReviewerName\u0022,\u0022description\u0022:\u0022The name of the person who performed the review.\u0022,\u0022required\u0022:true,\u0022type\u0022:\u0022System.String\u0022,\u0022typeNamespace\u0022:\u0022system\u0022,\u0022isList\u0022:false,\u0022collectionDataType\u0022:null,\u0022customType\u0022:null,\u0022properties\u0022:[],\u0022key\u0022:\u00229d6a5d9c-30c0-42de-8f8a-0166c5cce9ff\u0022},{\u0022name\u0022:\u0022ReviewerNotes\u0022,\u0022description\u0022:\u0022Any additional notes or comments from the reviewer.\u0022,\u0022required\u0022:true,\u0022type\u0022:\u0022System.String\u0022,\u0022typeNamespace\u0022:\u0022system\u0022,\u0022isList\u0022:false,\u0022collectionDataType\u0022:null,\u0022customType\u0022:null,\u0022properties\u0022:[],\u0022key\u0022:\u0022786a969d-c225-4ad1-9bda-dca030731795\u0022}],\u0022Description\u0022:\u0022Review and decide on an adverse event cluster escalation.\u0022,\u0022actionSchemaGenerationSource\u0022:\u0022aiAssistedManual\u0022}"
+    },
+    "locks": [],
+    "key": "8c544aed-234c-4814-9d5a-cf1684c23b5b"
+  }
+}

@@ -1,0 +1,60 @@
+{
+  "docVersion": "1.0.0",
+  "resource": {
+    "name": "ComplaintIntelligenceAgent_1",
+    "kind": "process",
+    "type": "agent",
+    "apiVersion": "orchestrator.uipath.com/v1",
+    "isOverridable": true,
+    "dependencies": [
+      {
+        "name": "ComplaintIntelligence.agent.ComplaintIntelligenceAgent_1",
+        "kind": "Package"
+      }
+    ],
+    "runtimeDependencies": [],
+    "files": [],
+    "folders": [
+      {
+        "fullyQualifiedName": "solution_folder"
+      }
+    ],
+    "spec": {
+      "type": "Agent",
+      "agentMemory": false,
+      "targetRuntime": "pythonAgent",
+      "environmentVariables": "",
+      "referencedAssets": null,
+      "name": "ComplaintIntelligenceAgent_1",
+      "description": null,
+      "package": {
+        "name": "ComplaintIntelligence.agent.ComplaintIntelligenceAgent_1",
+        "key": "ComplaintIntelligence.agent.ComplaintIntelligenceAgent:1.0.6"
+      },
+      "packageName": "ComplaintIntelligence.agent.ComplaintIntelligenceAgent",
+      "packageVersion": "1.0.6",
+      "entryPointUniqueId": "0249f23d-8f90-4bd0-9307-ce9e00fdbbee",
+      "entryPointName": "content/agent.json",
+      "inputArguments": null,
+      "inputArgumentsSchema": null,
+      "outputArgumentsSchema": null,
+      "inputArgumentsSchemaV2": "{\n  \u0022type\u0022: \u0022object\u0022,\n  \u0022properties\u0022: {\n    \u0022complaint_text\u0022: {\n      \u0022type\u0022: \u0022string\u0022\n    },\n    \u0022complaint_id\u0022: {\n      \u0022type\u0022: \u0022string\u0022\n    },\n    \u0022source_channel\u0022: {\n      \u0022type\u0022: \u0022string\u0022\n    }\n  }\n}",
+      "outputArgumentsSchemaV2": "{\n  \u0022type\u0022: \u0022object\u0022,\n  \u0022properties\u0022: {\n    \u0022extraction_result\u0022: {\n      \u0022type\u0022: \u0022string\u0022,\n      \u0022description\u0022: \u0022Output content\u0022\n    },\n    \u0022extraction_confidence\u0022: {\n      \u0022type\u0022: \u0022string\u0022\n    }\n  }\n}",
+      "hiddenForAttendedUser": false,
+      "alwaysRunning": false,
+      "autoStartProcess": false,
+      "targetFrameworkValue": "Portable",
+      "retentionAction": "Delete",
+      "retentionPeriod": 30,
+      "retentionBucketRef": null,
+      "staleRetentionAction": "Delete",
+      "staleRetentionPeriod": 180,
+      "staleRetentionBucketRef": null,
+      "entryPoints": "[{\u0022UniqueId\u0022:\u00220249f23d-8f90-4bd0-9307-ce9e00fdbbee\u0022,\u0022Path\u0022:\u0022content/agent.json\u0022,\u0022DisplayName\u0022:null,\u0022InputArguments\u0022:\u0022{\\n  \\\u0022type\\\u0022: \\\u0022object\\\u0022,\\n  \\\u0022properties\\\u0022: {\\n    \\\u0022complaint_text\\\u0022: {\\n      \\\u0022type\\\u0022: \\\u0022string\\\u0022\\n    },\\n    \\\u0022complaint_id\\\u0022: {\\n      \\\u0022type\\\u0022: \\\u0022string\\\u0022\\n    },\\n    \\\u0022source_channel\\\u0022: {\\n      \\\u0022type\\\u0022: \\\u0022string\\\u0022\\n    }\\n  }\\n}\u0022,\u0022OutputArguments\u0022:\u0022{\\n  \\\u0022type\\\u0022: \\\u0022object\\\u0022,\\n  \\\u0022properties\\\u0022: {\\n    \\\u0022extraction_result\\\u0022: {\\n      \\\u0022type\\\u0022: \\\u0022string\\\u0022,\\n      \\\u0022description\\\u0022: \\\u0022Output content\\\u0022\\n    },\\n    \\\u0022extraction_confidence\\\u0022: {\\n      \\\u0022type\\\u0022: \\\u0022string\\\u0022\\n    }\\n  }\\n}\u0022,\u0022Type\u0022:4,\u0022TargetRuntime\u0022:null,\u0022ContentRoot\u0022:null,\u0022DataVariation\u0022:null,\u0022Id\u0022:13896769}]",
+      "connections": null,
+      "tags": []
+    },
+    "locks": [],
+    "key": "33fb2757-9064-4f96-b268-b948b3260cce"
+  }
+}

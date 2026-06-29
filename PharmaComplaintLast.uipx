@@ -1,0 +1,13 @@
+{
+  "DocVersion": "1.0.0",
+  "StudioMinVersion": "2025.04.0",
+  "SolutionId": "5d0d3192-23de-4f32-9f35-08dec8f1e878",
+  "Projects": [
+    {
+      "Type": "CaseManagement",
+      "ProjectRelativePath": "PharmaComplaintCase/project.uiproj",
+      "Id": "b317dea8-e580-4b73-9f9d-a9efd882e60f"
+    }
+  ],
+  "AutomationHubIdeaUrl": null
+}

@@ -1,0 +1,56 @@
+{
+  "docVersion": "1.0.0",
+  "resource": {
+    "name": "PharmaComplaintCase",
+    "kind": "process",
+    "type": "caseManagement",
+    "apiVersion": "orchestrator.uipath.com/v1",
+    "projectKey": "b317dea8-e580-4b73-9f9d-a9efd882e60f",
+    "isOverridable": true,
+    "dependencies": [
+      {
+        "name": "PharmaComplaintCase",
+        "kind": "package"
+      }
+    ],
+    "runtimeDependencies": [],
+    "files": [],
+    "folders": [
+      {
+        "fullyQualifiedName": "solution_folder"
+      }
+    ],
+    "spec": {
+      "entryPointUniqueId": null,
+      "inputArgumentsSchema": null,
+      "outputArgumentsSchema": null,
+      "inputArgumentsSchemaV2": null,
+      "outputArgumentsSchemaV2": null,
+      "type": "CaseManagement",
+      "name": "PharmaComplaintCase",
+      "description": null,
+      "package": {
+        "key": "302365ee-17c6-48b0-bba0-e10b9f0cfcc5"
+      },
+      "packageName": "PharmaComplaintLast.caseManagement.PharmaComplaintCase",
+      "packageVersion": null,
+      "entryPointName": null,
+      "inputArguments": "{}",
+      "hiddenForAttendedUser": false,
+      "alwaysRunning": false,
+      "autoStartProcess": false,
+      "targetFrameworkValue": "Portable",
+      "retentionAction": "Delete",
+      "retentionPeriod": 30,
+      "retentionBucketRef": null,
+      "staleRetentionAction": "Delete",
+      "staleRetentionPeriod": 180,
+      "staleRetentionBucketRef": null,
+      "entryPoints": null,
+      "connections": null,
+      "tags": []
+    },
+    "locks": [],
+    "key": "f2d8264a-289f-4122-bd9e-755f1d93cba3"
+  }
+}

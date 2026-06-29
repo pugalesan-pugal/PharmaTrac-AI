@@ -1,0 +1,33 @@
+{
+  "docVersion": "1.0.0",
+  "resource": {
+    "name": "ComplaintIntelligence.agent.ComplaintIntelligenceAgent_1",
+    "kind": "package",
+    "apiVersion": "orchestrator.uipath.com/v1",
+    "isOverridable": true,
+    "dependencies": [],
+    "runtimeDependencies": [],
+    "files": [
+      {
+        "name": "package_ComplaintIntelligence.agent.ComplaintIntelligenceAgent_1.1.0.6.nupkg",
+        "kind": "Package",
+        "version": "1.0.6",
+        "url": "https://staging.uipath.com/b709c43d-bfcc-47b2-94d3-f252c73d20bb/2be80ef3-ccd9-4d81-8ffc-f1e4b086a29f/orchestrator_/odata/Processes/UiPath.Server.Configuration.OData.DownloadPackage(key=\u0027ComplaintIntelligence.agent.ComplaintIntelligenceAgent:1.0.6\u0027)?feedId=065358e5-4eb5-4e96-8412-19ea1b979ce0",
+        "key": "package_ComplaintIntelligence.agent.ComplaintIntelligenceAgent_1_1.0.6"
+      }
+    ],
+    "folders": [
+      {
+        "fullyQualifiedName": "solution_folder"
+      }
+    ],
+    "spec": {
+      "fileName": "ComplaintIntelligence.agent.ComplaintIntelligenceAgent.1.0.6.nupkg",
+      "fileReference": "package_ComplaintIntelligence.agent.ComplaintIntelligenceAgent_1_1.0.6",
+      "name": "ComplaintIntelligence.agent.ComplaintIntelligenceAgent_1",
+      "description": null
+    },
+    "locks": [],
+    "key": "ComplaintIntelligence.agent.ComplaintIntelligenceAgent:1.0.6"
+  }
+}

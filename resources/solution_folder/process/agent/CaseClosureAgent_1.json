@@ -1,0 +1,60 @@
+{
+  "docVersion": "1.0.0",
+  "resource": {
+    "name": "CaseClosureAgent_1",
+    "kind": "process",
+    "type": "agent",
+    "apiVersion": "orchestrator.uipath.com/v1",
+    "isOverridable": true,
+    "dependencies": [
+      {
+        "name": "PharmaComplaintLast.agent.CaseClosureAgent",
+        "kind": "Package"
+      }
+    ],
+    "runtimeDependencies": [],
+    "files": [],
+    "folders": [
+      {
+        "fullyQualifiedName": "solution_folder"
+      }
+    ],
+    "spec": {
+      "type": "Agent",
+      "agentMemory": false,
+      "targetRuntime": "pythonAgent",
+      "environmentVariables": "",
+      "referencedAssets": null,
+      "name": "CaseClosureAgent_1",
+      "description": null,
+      "package": {
+        "name": "PharmaComplaintLast.agent.CaseClosureAgent",
+        "key": "PharmaComplaintLast.agent.CaseClosureAgent:1.0.4-debug.63918309716"
+      },
+      "packageName": "PharmaComplaintLast.agent.CaseClosureAgent",
+      "packageVersion": "1.0.4-debug.63918309716",
+      "entryPointUniqueId": "a5e28440-d268-449e-b61c-fba91413df1a",
+      "entryPointName": "content/agent.json",
+      "inputArguments": null,
+      "inputArgumentsSchema": null,
+      "outputArgumentsSchema": null,
+      "inputArgumentsSchemaV2": "{\n  \u0022type\u0022: \u0022object\u0022,\n  \u0022properties\u0022: {\n    \u0022batch_id\u0022: {\n      \u0022type\u0022: \u0022string\u0022\n    },\n    \u0022product_name\u0022: {\n      \u0022type\u0022: \u0022string\u0022\n    },\n    \u0022recall_decision\u0022: {\n      \u0022type\u0022: \u0022string\u0022\n    },\n    \u0022signal_strength\u0022: {\n      \u0022type\u0022: \u0022string\u0022\n    },\n    \u0022distribution_regions\u0022: {\n      \u0022type\u0022: \u0022string\u0022\n    },\n    \u0022manufacturing_plant\u0022: {\n      \u0022type\u0022: \u0022string\u0022\n    }\n  }\n}",
+      "outputArgumentsSchemaV2": "{\n  \u0022type\u0022: \u0022object\u0022,\n  \u0022properties\u0022: {\n    \u0022closure_summary\u0022: {\n      \u0022type\u0022: \u0022string\u0022,\n      \u0022description\u0022: \u0022Output content\u0022\n    }\n  }\n}",
+      "hiddenForAttendedUser": false,
+      "alwaysRunning": false,
+      "autoStartProcess": false,
+      "targetFrameworkValue": "Portable",
+      "retentionAction": "Delete",
+      "retentionPeriod": 30,
+      "retentionBucketRef": null,
+      "staleRetentionAction": "Delete",
+      "staleRetentionPeriod": 180,
+      "staleRetentionBucketRef": null,
+      "entryPoints": "[{\u0022UniqueId\u0022:\u0022a5e28440-d268-449e-b61c-fba91413df1a\u0022,\u0022Path\u0022:\u0022content/agent.json\u0022,\u0022DisplayName\u0022:null,\u0022InputArguments\u0022:\u0022{\\n  \\\u0022type\\\u0022: \\\u0022object\\\u0022,\\n  \\\u0022properties\\\u0022: {\\n    \\\u0022batch_id\\\u0022: {\\n      \\\u0022type\\\u0022: \\\u0022string\\\u0022\\n    },\\n    \\\u0022product_name\\\u0022: {\\n      \\\u0022type\\\u0022: \\\u0022string\\\u0022\\n    },\\n    \\\u0022recall_decision\\\u0022: {\\n      \\\u0022type\\\u0022: \\\u0022string\\\u0022\\n    },\\n    \\\u0022signal_strength\\\u0022: {\\n      \\\u0022type\\\u0022: \\\u0022string\\\u0022\\n    },\\n    \\\u0022distribution_regions\\\u0022: {\\n      \\\u0022type\\\u0022: \\\u0022string\\\u0022\\n    },\\n    \\\u0022manufacturing_plant\\\u0022: {\\n      \\\u0022type\\\u0022: \\\u0022string\\\u0022\\n    }\\n  }\\n}\u0022,\u0022OutputArguments\u0022:\u0022{\\n  \\\u0022type\\\u0022: \\\u0022object\\\u0022,\\n  \\\u0022properties\\\u0022: {\\n    \\\u0022closure_summary\\\u0022: {\\n      \\\u0022type\\\u0022: \\\u0022string\\\u0022,\\n      \\\u0022description\\\u0022: \\\u0022Output content\\\u0022\\n    }\\n  }\\n}\u0022,\u0022Type\u0022:4,\u0022TargetRuntime\u0022:null,\u0022ContentRoot\u0022:null,\u0022DataVariation\u0022:null,\u0022Id\u0022:14159725}]",
+      "connections": null,
+      "tags": []
+    },
+    "locks": [],
+    "key": "e2908521-6cd1-4d31-8dcc-bb5be6e1f6c3"
+  }
+}

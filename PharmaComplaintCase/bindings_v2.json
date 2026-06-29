@@ -1,0 +1,161 @@
+{
+  "version": "2.0",
+  "resources": [
+    {
+      "resource": "process",
+      "key": "pugalesan2004@gmail.com's workspace (Converted).PharmaSignal_CaseTrigger",
+      "id": "processpugalesan2004@gmail.com's workspace (Converted).PharmaSignal_CaseTrigger",
+      "value": {
+        "folderPath": {
+          "defaultValue": "pugalesan2004@gmail.com's workspace (Converted)",
+          "isExpression": false,
+          "displayName": "Folder path"
+        },
+        "name": {
+          "defaultValue": "PharmaSignal_CaseTrigger",
+          "isExpression": false,
+          "displayName": "Process name"
+        }
+      },
+      "metadata": {
+        "ActivityName": "PharmaSignal_CaseTrigger",
+        "BindingsVersion": "2.2",
+        "DisplayLabel": "name",
+        "SolutionsSupport": "true"
+      }
+    },
+    {
+      "resource": "process",
+      "key": "pugalesan2004@gmail.com's workspace (Converted).ClusterDetection.agent.ClusterDetectionRecallDecisionRecallDecisionAgent",
+      "id": "processpugalesan2004@gmail.com's workspace (Converted).ClusterDetection.agent.ClusterDetectionRecallDecisionRecallDecisionAgent",
+      "value": {
+        "folderPath": {
+          "defaultValue": "pugalesan2004@gmail.com's workspace (Converted)",
+          "isExpression": false,
+          "displayName": "Folder path"
+        },
+        "name": {
+          "defaultValue": "ClusterDetection.agent.ClusterDetectionAgent",
+          "isExpression": false,
+          "displayName": "Process name"
+        }
+      },
+      "metadata": {
+        "ActivityName": "ClusterDetection.agent.ClusterDetectionAgent",
+        "BindingsVersion": "2.2",
+        "DisplayLabel": "name",
+        "SolutionsSupport": "true",
+        "subType": "Agent"
+      }
+    },
+    {
+      "resource": "process",
+      "key": "pugalesan2004@gmail.com's workspace/Debug_PharmaComplaintLast.ComplaintIntelligenceRecallDecisionRecallDecisionAgent",
+      "id": "processpugalesan2004@gmail.com's workspace/Debug_PharmaComplaintLast.ComplaintIntelligenceRecallDecisionRecallDecisionAgent",
+      "value": {
+        "folderPath": {
+          "defaultValue": "pugalesan2004@gmail.com's workspace/Debug_PharmaComplaintLast",
+          "isExpression": false,
+          "displayName": "Folder path"
+        },
+        "name": {
+          "defaultValue": "ComplaintIntelligenceAgent",
+          "isExpression": false,
+          "displayName": "Process name"
+        }
+      },
+      "metadata": {
+        "ActivityName": "Com",
+        "BindingsVersion": "2.2",
+        "DisplayLabel": "name",
+        "SolutionsSupport": "true"
+      }
+    },
+    {
+      "resource": "process",
+      "key": "pugalesan2004@gmail.com's workspace (Converted).Batch.Lookup.agent.Batch.Lookup.RecallDecisionRecallDecisionAgent",
+      "id": "processpugalesan2004@gmail.com's workspace (Converted).Batch.Lookup.agent.Batch.Lookup.RecallDecisionRecallDecisionAgent",
+      "value": {
+        "folderPath": {
+          "defaultValue": "pugalesan2004@gmail.com's workspace (Converted)",
+          "isExpression": false,
+          "displayName": "Folder path"
+        },
+        "name": {
+          "defaultValue": "Batch.Lookup.agent.Batch.Lookup.Agent",
+          "isExpression": false,
+          "displayName": "Process name"
+        }
+      },
+      "metadata": {
+        "ActivityName": "Batch Lookup Agent",
+        "BindingsVersion": "2.2",
+        "DisplayLabel": "name",
+        "SolutionsSupport": "true",
+        "subType": "Agent"
+      }
+    },
+    {
+      "resource": "Connection",
+      "key": "637f7779-bd13-41ab-b17a-15947b80ee2d",
+      "id": "Connection637f7779-bd13-41ab-b17a-15947b80ee2d",
+      "value": {
+        "ConnectionId": {
+          "defaultValue": "637f7779-bd13-41ab-b17a-15947b80ee2d",
+          "isExpression": false,
+          "displayName": "uipath-google-gmail connection"
+        }
+      },
+      "metadata": {
+        "ActivityName": "Send Email",
+        "BindingsVersion": "2.2",
+        "DisplayLabel": "uipath-google-gmail connection",
+        "UseConnectionService": "true",
+        "Connector": "uipath-google-gmail"
+      }
+    },
+    {
+      "resource": "process",
+      "key": "Shared/Solution 9.RecallDecisionAgent",
+      "id": "processShared/Solution 9.RecallDecisionAgent",
+      "value": {
+        "folderPath": {
+          "defaultValue": "Shared/Solution 9",
+          "isExpression": false,
+          "displayName": "Folder path"
+        },
+        "name": {
+          "defaultValue": "RecallDecisionAgent",
+          "isExpression": false,
+          "displayName": "Process name"
+        }
+      },
+      "metadata": {
+        "ActivityName": "RecallDecisionAgent",
+        "BindingsVersion": "2.2",
+        "DisplayLabel": "name",
+        "SolutionsSupport": "true",
+        "subType": "Agent"
+      }
+    },
+    {
+      "resource": "process",
+      "key": "Agent",
+      "id": "processAgent",
+      "value": {
+        "name": {
+          "defaultValue": "Agent",
+          "isExpression": false,
+          "displayName": "Process name"
+        }
+      },
+      "metadata": {
+        "ActivityName": "Agent",
+        "BindingsVersion": "2.2",
+        "DisplayLabel": "name",
+        "SolutionsSupport": "true",
+        "subType": "Agent"
+      }
+    }
+  ]
+}

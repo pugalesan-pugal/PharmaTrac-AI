@@ -1,0 +1,43 @@
+{
+  "docVersion": "1.0.0",
+  "resource": {
+    "name": "EscalationApp_Final",
+    "kind": "appVersion",
+    "apiVersion": "apps.uipath.com/v1",
+    "isOverridable": true,
+    "dependencies": [
+      {
+        "name": "ReviewPage",
+        "kind": "Entity"
+      }
+    ],
+    "runtimeDependencies": [],
+    "files": [
+      {
+        "name": "EscalationApp_Final.uiapp",
+        "kind": "appVersion",
+        "url": "https://staging.uipath.com/b709c43d-bfcc-47b2-94d3-f252c73d20bb/apps_/default/api/v1/default/models/IDd9192cc5ad694e20b4564aeddfd988ce/publish/versions/6/package",
+        "key": "ID66a228c84c3441e28364dac77e6288a6"
+      }
+    ],
+    "folders": [
+      {
+        "fullyQualifiedName": "solution_folder"
+      }
+    ],
+    "spec": {
+      "name": "EscalationApp_Final",
+      "description": "",
+      "appSystemName": "IDd9192cc5ad694e20b4564aeddfd988ce",
+      "version": "6.0.0",
+      "isAppPublic": false,
+      "expressionLanguage": "VB",
+      "publishNote": "6.0",
+      "uiappFile": "ID66a228c84c3441e28364dac77e6288a6",
+      "uiappFileName": "EscalationApp_Final.uiapp",
+      "isUnifiedProject": false
+    },
+    "locks": [],
+    "key": "ID66a228c84c3441e28364dac77e6288a6"
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "docVersion": "1.0.0",
+  "resource": {
+    "name": "PharmaComplaintCase",
+    "kind": "package",
+    "apiVersion": "orchestrator.uipath.com/v1",
+    "projectKey": "b317dea8-e580-4b73-9f9d-a9efd882e60f",
+    "isOverridable": true,
+    "dependencies": [],
+    "runtimeDependencies": [],
+    "files": [],
+    "folders": [
+      {
+        "fullyQualifiedName": "solution_folder"
+      }
+    ],
+    "spec": {
+      "fileName": null,
+      "fileReference": null,
+      "name": "PharmaComplaintCase",
+      "description": null
+    },
+    "locks": [],
+    "key": "302365ee-17c6-48b0-bba0-e10b9f0cfcc5"
+  }
+}
