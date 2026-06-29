@@ -35,7 +35,7 @@ flowchart TD
     subgraph Stage 1: Received
         A[Incoming Complaint Narrative] --> B[PharmaSignal_CaseTrigger RPA]
         B --> C[Validate JSON Payload & Open Case]
-    </td>
+    end
 
     subgraph Stage 2: Enriching
         C --> D[Complaint Intelligence Agent]
